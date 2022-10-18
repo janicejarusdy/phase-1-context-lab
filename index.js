@@ -1,5 +1,23 @@
 /* Your Code Here */
 
+function createEmployeeRecord (arr) {
+    const employee = {
+        "firstName": arr[0],
+        familyName: arr[1],
+        title: arr[2],
+        payPerHour: arr[3],
+        timeInEvents: [],
+        timeOutEvents: []
+    }
+
+    return employee
+    
+}
+
+function createEmployeeRecords(employees) {
+    return employees.map(employee => createEmployeeRecord(employee))
+}
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
